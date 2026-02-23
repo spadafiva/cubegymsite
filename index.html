@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubeGym - Coming Soon</title>
+    <meta name="description" content="CubeGym - Master the Rubik's Cube. Coming soon to the App Store.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --purple-primary: #7C0AF5;
+            --purple-dark: #6308C4;
+            --bg-dark: #292A2F;
+            --bg-subtle: #34363C;
+            --text-primary: #FFFFFF;
+            --text-subtle: #D6D6D6;
+            --cube-blue: #1472FF;
+            --cube-red: #FF1F1F;
+            --cube-yellow: #FFE666;
+            --cube-green: #00FF76;
+            --cube-orange: #FF8B4D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 480px;
+        }
+
+        .icon {
+            width: 160px;
+            height: 160px;
+            border-radius: 32px;
+            margin-bottom: 32px;
+            box-shadow: 0 8px 32px rgba(124, 10, 245, 0.3);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--text-subtle);
+            margin-bottom: 48px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--purple-primary);
+            color: var(--text-primary);
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .cube-colors {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 48px;
+        }
+
+        .cube-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .cube-dot.blue { background: var(--cube-blue); }
+        .cube-dot.red { background: var(--cube-red); }
+        .cube-dot.yellow { background: var(--cube-yellow); }
+        .cube-dot.green { background: var(--cube-green); }
+        .cube-dot.orange { background: var(--cube-orange); }
+        .cube-dot.white { background: var(--text-primary); }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .tagline {
+                font-size: 18px;
+            }
+
+            .icon {
+                width: 120px;
+                height: 120px;
+                border-radius: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="icon.png" alt="CubeGym" class="icon">
+        <h1>CubeGym</h1>
+        <p class="tagline">Master the Rubik's Cube</p>
+        <span class="badge">Coming Soon to the App Store</span>
+        <div class="cube-colors">
+            <div class="cube-dot white"></div>
+            <div class="cube-dot yellow"></div>
+            <div class="cube-dot green"></div>
+            <div class="cube-dot blue"></div>
+            <div class="cube-dot red"></div>
+            <div class="cube-dot orange"></div>
+        </div>
+    </div>
+</body>
+</html>
